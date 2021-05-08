@@ -3,6 +3,7 @@
 {%block content%}
 
     <h1>Blog Project</h1>
+    <a href="{% url 'homePage'%}">Book</a><hr>
     <a href="{% url 'newPost'%}">NewPost</a><hr>
     {% for unit in blogContents %}
         {{unit.title}}<br>

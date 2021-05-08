@@ -1,0 +1,14 @@
+{%extends 'base2.html'%}
+
+{%block content%}
+
+    <h1>책 정보</h1>
+    <a href="{% url 'newBook'%}">NewBook</a><hr>
+    {% for unit in bookContents %}
+        {{unit.title}}<br>
+        {{unit.pub_date}}<br>
+        <a href="{% url 'detailBook' unit.id%}">more</a><br>
+    {% endfor %}
+
+
+{%endblock%}
