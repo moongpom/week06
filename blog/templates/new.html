@@ -2,8 +2,7 @@
 
 {%block content%}
 
-New Post
-<a href="{% url 'home'%}">홈페이지</a>
+<span></span>
 <form action="{%url 'create'%}" method="post">
     {%csrf_token%}
     <p>제목 <input type="text" name="title"></p>
